@@ -78,7 +78,7 @@ else
     log_debug "Updating oh-my-posh"
     sudo oh-my-posh upgrade
 fi
-source ~/.zshrc
+stow zsh
 # Ensure the user's shell is zsh
 if [ "$SHELL" != "/bin/zsh" ]; then
     log_info "Changing the user's shell to zsh"
